@@ -1,0 +1,1 @@
+# codec-cors-credentials
