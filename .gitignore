@@ -1,0 +1,6 @@
+.env
+.envrc
+.DS_Store
+src/
+pkg/
+certs/

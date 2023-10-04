@@ -1,0 +1,9 @@
+.env.example
+.envrc
+.gitignore
+README.md
+exec.sh
+exec.ps1
+src/
+pkg/
+certs/
