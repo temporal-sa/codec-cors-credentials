@@ -75,8 +75,7 @@ func (dc *DataConverter) WithContext(ctx context.Context) converter.DataConverte
 func (e *Codec) getKey(keyID string) (key []byte) {
 	// Key must be fetched from secure storage in production (such as a KMS).
 	// For testing here we just hard code a key.
-	// return []byte("test-key-test-key-test-key-test!")
-	return []byte("sa-rocks!sa-rocks!sa-rocks!yeah!")
+	return []byte("test-key-test-key-test-key-test!")
 }
 
 // NewEncryptionDataConverter creates a new instance of EncryptionDataConverter wrapping a DataConverter
