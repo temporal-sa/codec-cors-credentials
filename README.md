@@ -24,7 +24,7 @@ These requirements are implemented in this Codec Server.
 
 ## Implementation
 
-The core code for this Codec Server comes from a two sources:
+The core code for this Codec Server comes from two sources:
 1. The Go Regular Web App example from Auth0: https://auth0.com/docs/quickstart/webapp/golang
 2. The Go Encryption Codec example from Temporal samples: https://github.com/temporalio/samples-go/tree/main/encryption
 
