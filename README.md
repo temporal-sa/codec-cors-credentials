@@ -120,6 +120,6 @@ Return to https://cloud.temporal.io and refresh the workflow.
 
 <img src="./docs/workflow-decrypted.png" width="400">
 
-For Alice, the /decode endpoint responds with the decrypted payload an a 200 OK message.
+For Alice, the `/decode` endpoint responds with the decrypted payload an a 200 OK message.
 
 <img src="./docs/decode-200.png" width="400">
