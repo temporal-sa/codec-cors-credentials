@@ -1,4 +1,4 @@
-FROM golang:1.19.3-alpine3.17
+FROM golang:1.21-alpine3.17
 
 # Define current working directory
 WORKDIR /codec-cors-credentials

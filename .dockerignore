@@ -1,9 +1,11 @@
 .env.example
 .envrc
 .gitignore
+.DS_Store
 README.md
 exec.sh
 exec.ps1
 src/
 pkg/
-certs/
+docs/
+out/

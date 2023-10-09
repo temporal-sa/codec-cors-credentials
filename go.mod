@@ -1,6 +1,6 @@
 module codec-cors-credentials
 
-go 1.21.1
+go 1.21
 
 require (
 	github.com/coreos/go-oidc/v3 v3.6.0
