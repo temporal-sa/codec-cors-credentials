@@ -16,12 +16,19 @@ func Handler(ctx *gin.Context) {
 		return
 	}
 
-	scheme := "http"
-	if ctx.Request.TLS != nil {
-		scheme = "https"
+	callbackUrl, err := url.Parse(os.Getenv("AUTH0_CALLBACK_URL"))
+	if err != nil {
+		ctx.String(http.StatusInternalServerError, err.Error())
+		return
 	}
 
-	returnTo, err := url.Parse(scheme + "://" + ctx.Request.Host)
+	// scheme := "http"
+	// if ctx.Request.TLS != nil {
+	// 	scheme = "https"
+	// }
+	// returnTo, err := url.Parse(scheme + "://" + ctx.Request.Host)
+
+	returnTo, err := url.Parse(callbackUrl.Scheme + "://" + callbackUrl.Host)
 	if err != nil {
 		ctx.String(http.StatusInternalServerError, err.Error())
 		return
