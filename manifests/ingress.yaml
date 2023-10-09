@@ -1,0 +1,18 @@
+apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRoute
+metadata:
+  name: codec-server-creds
+spec:
+  entryPoints:
+  - websecure
+  routes:
+  - kind: Rule
+    match: Host(`codec-creds.tmprl-demo.cloud`)
+    services:
+    - name: codec-server-creds
+      passHostHeader: true
+      port: 3000
+      responseForwarding:
+        flushInterval: 100ms
+  tls:
+    secretName: codec-server-creds-tls
