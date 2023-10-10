@@ -49,7 +49,7 @@ The full details of the Auth0 setup are beyond this guide, but the key steps wer
 
 ### Codec Server setup
 
-In order for the Codec Server to set a "SameSite=None" cookie it must run securely with `https`, therefore:
+In order for the Codec Server to set a `SameSite=None` cookie it must run securely with `https`, therefore:
 * Generate a self-signed TLS certificate and key, and save them as `tls.crt` and `tls.key` in the `certs` directory of this repo (this directory is ignored by git).
 
 Set the following environment variables in the terminal where you will run the Codec Server:
