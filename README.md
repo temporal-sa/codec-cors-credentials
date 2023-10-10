@@ -7,7 +7,9 @@ supports [Cross-Origin Resource Sharing](https://developer.mozilla.org/en-US/doc
 ## Background
 When a Codec Server is configured within the Temporal UI, the Temporal UI code, executed by the browser, will make JavaScript `XMLHTTPRequest` (XHR) or `Fetch` requests to the Codec Server's `/decode` endpoint to decode the encoded payloads in the Workflow history.
 
-By default, in cross-origin Fetch/XHR invocations, browsers will **not** send credentials. Therefore, if the Codec Server requires authentication, *AND* the user has successfully logged in to the Codec Server, (by default) the browser will not send the authentication cookie with the request to the Codec Server. In order to send the authentication cookie, a specific flag has to be set on the XMLHttpRequest object (flag: `withCredentials = true`) or the Request constructor (flag: `credentials = 'include'`) when it is invoked.
+By default, in cross-origin Fetch/XHR invocations, browsers will **not** send credentials. Therefore, if the Codec Server requires authentication, *AND* the user has successfully logged in to the Codec Server, (by default) the browser will not send the authentication cookie with the request to the Codec Server. 
+
+In order to send the authentication cookie, a specific flag has to be set on the XMLHttpRequest object (flag: `withCredentials = true`) or the Request constructor (flag: `credentials = 'include'`) when it is invoked.
 
 The configuration option within the Temporal UI to set the appropriate flag is "**Include cross-origin credentials**", which can be found in the Codec Server settings.
 
