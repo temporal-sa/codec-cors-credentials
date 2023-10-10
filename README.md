@@ -16,7 +16,7 @@ The configuration option within the Temporal UI to set the appropriate flag is "
 <img src="./docs/settings.png" width="400">
 
 
-Once "**Include cross-origin credentials**" is enabled in the settings, Temporal will send the credentials (e.g. the authentication cookie) to the Codec Server with all requests to the `/decode` endpoint.  
+Once "**Include cross-origin credentials**" is enabled in the settings, Temporal will send the credentials (e.g. the authentication cookie) to the Codec Server with all XHR/Fetch requests to the `/decode` endpoint.  
 
 In addition to the XHR/Fetch client requiring configuration to send credentials, the Codec Server must also be configured to:
 1. Set the Cookie with the appropriate attributes (e.g. `SameSite=None; Secure`)
