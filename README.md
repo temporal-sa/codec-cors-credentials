@@ -105,7 +105,7 @@ The Temporal UI will attempt to decode the payloads, but will fail with a **403 
 <img src="./docs/decode-403.png" width="400">
 
 ### Codec Server with Alice
-Logout of the Codec Server an re-login with Alice, who is authorized to decode the encrypted payloads:
+Logout of the Codec Server and re-login with Alice, who is authorized to decode the encrypted payloads:
 
 #### Login as Alice:
 
