@@ -1,7 +1,7 @@
 # codec-cors-credentials
 
 ## Overview
-This repository contains an implementation of a Temporal [Codec Server](https://docs.temporal.io/dataconversion#codec-server) that 
+This repository contains an implementation of a Temporal [Codec Server](https://docs.temporal.io/codec-server) that 
 supports [Cross-Origin Resource Sharing](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) (CORS), and specifically CORS [Requests with credentials](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS#requests_with_credentials).
 
 ## Background
