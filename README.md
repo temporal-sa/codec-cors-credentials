@@ -11,7 +11,7 @@ By default, in cross-origin Fetch/XHR invocations, browsers will **not** send cr
 
 In order to send the authentication cookie, a specific flag has to be set on the XMLHttpRequest object (flag: `withCredentials = true`) or the Request constructor (flag: `credentials = 'include'`) when it is invoked.
 
-The configuration option within the Temporal UI to set the appropriate flag is "**Include cross-origin credentials**", which can be found in the Codec Server settings.
+The configuration option within the Temporal UI to ensure the flag is set is "**Include cross-origin credentials**", which can be found in the Codec Server settings.
 
 <img src="./docs/settings.png" width="400">
 
