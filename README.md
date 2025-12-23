@@ -22,7 +22,7 @@ In addition to the XHR/Fetch client requiring configuration to send credentials,
 1. Set the Cookie with the appropriate attributes (e.g. `SameSite=None; Secure`)
 2. Accept the Cookie and return a response with the appropriate CORS headers (e.g. `Access-Control-Allow-Credentials: true`)
 
-These requirements are implemented in this Codec Server.
+These requirements are implemented in this Codec Server in this repository.
 
 ## Implementation
 
